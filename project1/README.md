@@ -1,7 +1,7 @@
 # bookstore
 
-> 作业内容说明和要求文档为 Project_1/README.md
-> 	作业源码目录为 Project_1/bookstore
+> 作业内容说明和要求文档为 Project_1/README.md<br>
+> 	作业源码目录为 Project_1/bookstore<br>
 
 ## 功能
 
