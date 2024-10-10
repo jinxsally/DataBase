@@ -101,11 +101,39 @@ bash script/test.sh
 1.bookstore 文件夹是该项目的 demo，采用 Flask 后端框架与 SQLite 数据库，实现了前60%功能以及对应的测试用例代码。
 **要求大家创建本地 MongoDB 数据库，将`bookstore/fe/data/book.db`中的内容以合适的形式存入本地数据库，后续所有数据读写都在本地的 MongoDB 数据库中进行** 
 
-书本的内容可自行构造，也可参从网盘下载，下载地址为：
+ bookstore/fe/data/book.db中包含测试的数据，从豆瓣网抓取的图书信息，
+ 其DDL为：
+
+    create table book
+    (
+        id TEXT primary key,
+        title TEXT,
+        author TEXT,
+        publisher TEXT,
+        original_title TEXT,
+        translator TEXT,
+        pub_year TEXT,
+        pages INTEGER,
+        price INTEGER,
+        currency_unit TEXT,
+        binding TEXT,
+        isbn TEXT,
+        author_intro TEXT,
+        book_intro text,
+        content TEXT,
+        tags TEXT,
+        picture BLOB
+    );
+
+   更多的数据可以从网盘下载，下载地址为，链接：
+
     https://pan.baidu.com/s/1bjCOW8Z5N_ClcqU54Pdt8g
 
 提取码：
+
     hj6q
+
+这份数据同bookstore/fe/data/book.db的schema相同，但是有更多的数据(约3.5GB, 40000+行)
 
 2.在完成前60%功能的基础上，继续实现后40%功能，要有接口、后端逻辑实现、数据库操作、代码测试。对所有接口都要写 test case，通过测试并计算测试覆盖率（尽量提高测试覆盖率）。
 
@@ -128,16 +156,14 @@ bash script/test.sh
 
 注：验收依据为报告，本次大作业所作的工作要完整展示在报告中。
 
-
-
 ## 验收与考核准测
 
 - 提交 **代码+报告** 压缩包到 **作业提交入口**
-- 命名规则：2024_ECNU_PJ1_第几组(.zip)
+- 命名规则：**2024_ECNU_PJ1_第几组**，如：2024_ECNU_PJ1_第1组.zip
 - 提交截止日期：**2024.10.31 23:59**
 
+**考核标准：**
 
-考核标准：
 1. 没有提交或没有实质的工作，得D
 2. 完成"要求"中的第1点，可得C
 3. 完成前2点，通过全部测试用例且有较高的测试覆盖率，可得B
