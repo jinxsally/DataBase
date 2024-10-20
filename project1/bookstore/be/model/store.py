@@ -3,52 +3,53 @@ import os
 import sqlite3 as sqlite
 import threading
 
+from pymongo import MongoClient
+import pymongo
+
 
 class Store:
     database: str
 
-    def __init__(self, db_path):
-        self.database = os.path.join(db_path, "be.db")
-        self.init_tables()
+    def __init__(self):
+        self.database = "mongodb://localhost:27017"  # 连接数据库
+        self.init_tables()  # 初始化数据库
 
     def init_tables(self):
         try:
-            conn = self.get_db_conn()
-            conn.execute(
-                "CREATE TABLE IF NOT EXISTS user ("
-                "user_id TEXT PRIMARY KEY, password TEXT NOT NULL, "
-                "balance INTEGER NOT NULL, token TEXT, terminal TEXT);"
+            db = self.get_db_conn()
+            # 创建用户集合
+            db.users.create_index([("user_id", pymongo.ASCENDING)], unique=True)
+
+            # 创建用户商店集合
+            db.user_store.create_index(
+                [("user_id", pymongo.ASCENDING), ("store_id", pymongo.ASCENDING)],
+                unique=True,
             )
 
-            conn.execute(
-                "CREATE TABLE IF NOT EXISTS user_store("
-                "user_id TEXT, store_id, PRIMARY KEY(user_id, store_id));"
+            # 创建商店集合
+            db.stores.create_index(
+                [("store_id", pymongo.ASCENDING), ("book_id", pymongo.ASCENDING)],
+                unique=True,
             )
 
-            conn.execute(
-                "CREATE TABLE IF NOT EXISTS store( "
-                "store_id TEXT, book_id TEXT, book_info TEXT, stock_level INTEGER,"
-                " PRIMARY KEY(store_id, book_id))"
-            )
+            # 创建新订单集合
+            db.new_orders.create_index([("order_id", pymongo.ASCENDING)], unique=True)
 
-            conn.execute(
-                "CREATE TABLE IF NOT EXISTS new_order( "
-                "order_id TEXT PRIMARY KEY, user_id TEXT, store_id TEXT)"
+            # 创建新订单详情集合
+            db.new_order_details.create_index(
+                [("order_id", pymongo.ASCENDING), ("book_id", pymongo.ASCENDING)],
+                unique=True,
             )
+            print("connect to database")
 
-            conn.execute(
-                "CREATE TABLE IF NOT EXISTS new_order_detail( "
-                "order_id TEXT, book_id TEXT, count INTEGER, price INTEGER,  "
-                "PRIMARY KEY(order_id, book_id))"
-            )
-
-            conn.commit()
-        except sqlite.Error as e:
+        # 错误捕获
+        except pymongo.errors.PyMongoError as e:
             logging.error(e)
-            conn.rollback()
 
-    def get_db_conn(self) -> sqlite.Connection:
-        return sqlite.connect(self.database)
+    def get_db_conn(self):
+        client = MongoClient(self.database)  # 替换为 MongoDB URI
+        db = client["BookStore"]
+        return db
 
 
 database_instance: Store = None
@@ -56,9 +57,9 @@ database_instance: Store = None
 init_completed_event = threading.Event()
 
 
-def init_database(db_path):
+def init_database():
     global database_instance
-    database_instance = Store(db_path)
+    database_instance = Store()
 
 
 def get_db_conn():

@@ -4,6 +4,7 @@ import logging
 import sqlite3 as sqlite
 from be.model import error
 from be.model import db_conn
+from pymongo import errors
 
 # encode a json string like:
 #   {
@@ -19,7 +20,8 @@ def jwt_encode(user_id: str, terminal: str) -> str:
         key=user_id,
         algorithm="HS256",
     )
-    return encoded.decode("utf-8")
+    # return encoded.decode("utf-8")
+    return encoded  # 更改，否则会报错
 
 
 # decode a JWT to a json string like:
@@ -57,14 +59,22 @@ class User(db_conn.DBConn):
         try:
             terminal = "terminal_{}".format(str(time.time()))
             token = jwt_encode(user_id, terminal)
-            self.conn.execute(
-                "INSERT into user(user_id, password, balance, token, terminal) "
-                "VALUES (?, ?, ?, ?, ?);",
-                (user_id, password, 0, token, terminal),
-            )
-            self.conn.commit()
-        except sqlite.Error:
-            return error.error_exist_user_id(user_id)
+            # self.conn.execute(
+            #     # "INSERT into user(user_id, password, balance, token, terminal) "
+            #     # "VALUES (?, ?, ?, ?, ?);",
+            #     # (user_id, password, 0, token, terminal),
+            # )
+            user = {
+                "user_id": user_id,
+                "password": password,
+                "balance": 0,
+                "token": token,
+                "terminal": terminal,
+            }
+            print(user)
+            self.conn.users.insert_one(user)
+        except errors.DuplicateKeyError:
+            return error.error_exist_user_id(user_id)  # 处理用户 ID 已存在的情况
         return 200, "ok"
 
     def check_token(self, user_id: str, token: str) -> (int, str):
@@ -174,3 +184,11 @@ class User(db_conn.DBConn):
         except BaseException as e:
             return 530, "{}".format(str(e))
         return 200, "ok"
+    
+    #搜索图书功能
+    # def search(user_id:str,title:str,tag:str,index:str,content:str,store_id:str
+    # ):
+    #     try:
+
+    #     except:
+    #         return 

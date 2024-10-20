@@ -7,6 +7,7 @@ from be.view import auth
 from be.view import seller
 from be.view import buyer
 from be.model.store import init_database, init_completed_event
+from flask_pymongo import PyMongo
 
 bp_shutdown = Blueprint("shutdown", __name__)
 
@@ -25,10 +26,10 @@ def be_shutdown():
 
 
 def be_run():
-    this_path = os.path.dirname(__file__)
+    this_path = os.path.dirname(__file__)  # 当前python文件的脚本路径
     parent_path = os.path.dirname(this_path)
     log_file = os.path.join(parent_path, "app.log")
-    init_database(parent_path)
+    init_database()  # 该处是数据库连接函数，需要修改为MongoDB数据库
 
     logging.basicConfig(filename=log_file, level=logging.ERROR)
     handler = logging.StreamHandler()
@@ -44,4 +45,4 @@ def be_run():
     app.register_blueprint(seller.bp_seller)
     app.register_blueprint(buyer.bp_buyer)
     init_completed_event.set()
-    app.run()
+    app.run(debug=True)

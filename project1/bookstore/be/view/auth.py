@@ -31,6 +31,7 @@ def logout():
 def register():
     user_id = request.json.get("user_id", "")
     password = request.json.get("password", "")
+    # print(type(user_id), type(password))
     u = user.User()
     code, message = u.register(user_id=user_id, password=password)
     return jsonify({"message": message}), code
@@ -53,5 +54,26 @@ def change_password():
     u = user.User()
     code, message = u.change_password(
         user_id=user_id, old_password=old_password, new_password=new_password
+    )
+    return jsonify({"message": message}), code
+
+
+# add：搜索图书，全站/店铺归并到一个接口
+@bp_auth.route("/search", methods=["POST"])
+def search():
+    user_id = request.json.get("user_id", "")
+    title = request.json.get("title", "")
+    tag = request.json.get("tag", "")
+    index = request.json.get("index", "")
+    content = request.json.get("content", "")
+    store_id = request.json.get("store_id", "")
+    u = user.User()
+    code, message = u.change_password(
+        user_id=user_id,
+        title=title,
+        tag=tag,
+        index=index,
+        content=content,
+        store_id=store_id,
     )
     return jsonify({"message": message}), code

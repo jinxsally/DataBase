@@ -25,7 +25,11 @@ def seller_add_book():
 
     s = seller.Seller()
     code, message = s.add_book(
-        user_id, store_id, book_info.get("id"), json.dumps(book_info), stock_level
+        user_id,
+        store_id,
+        book_info.get("id"),
+        json.dumps(book_info, ensure_ascii=False),  # 确保中文字符不会被转义
+        stock_level,
     )
 
     return jsonify({"message": message}), code

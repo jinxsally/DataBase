@@ -1,0 +1,1871 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [12/Oct/2024 13:39:25] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Oct/2024 13:39:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\code\КэѕЭ№ЬАн\Lab1\CDMS.Xuan_ZHOU.2024Fall.DaSE\project1\bookstore\be\serve.py", line 24, in be_shutdown
+    shutdown_server()
+  File "d:\code\КэѕЭ№ЬАн\Lab1\CDMS.Xuan_ZHOU.2024Fall.DaSE\project1\bookstore\be\serve.py", line 18, in shutdown_server
+    raise RuntimeError("Not running with the Werkzeug Server")
+RuntimeError: Not running with the Werkzeug Server
+INFO:werkzeug:127.0.0.1 - - [12/Oct/2024 15:41:34] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/Oct/2024 15:41:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/Oct/2024 22:51:16] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Oct/2024 22:51:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/Oct/2024 22:52:16] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Oct/2024 22:52:23] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 09:58:46] "[33mPOST /?user_id=jinxsally&password=123456 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 09:59:11] "[33mPOST /register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:00:22] "[33mPOST /register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:03:21] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:04:41] "[33mPOST / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:05:04] "[33mPOST /register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:05:48] "[33mPOST /register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:06:07] "[33mPOST /register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:06:35] "[33mPOST /register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:06:53] "[33mPOST /register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:07:54] "[31m[1mPOST /auth/register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:11:48] "[31m[1mPOST /auth/register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:12:52] "[31m[1mPOST /auth/register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:14:10] "[31m[1mPOST /auth/register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\socketserver.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\threading.py', reloading
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:15:13] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\requests\\models.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\simplejson\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\simplejson\\decoder.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:16:31] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\lxml\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\re\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\random.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\logging\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\urllib\\parse.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pytest\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\stash.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\scope.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pluggy\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pluggy\\_hooks.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\response.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\synchronous\\bulk.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\synchronous\\client_bulk.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\asynchronous\\server.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\asynchronous\\client_session.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\asynchronous\\pool.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\asynchronous\\bulk.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\asynchronous\\client_bulk.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\asynchronous\\database.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\run.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\run.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\uuid.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\run.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\run.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:39:00] "[31m[1mPOST /auth/register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:44:17] "[31m[1mPOST /auth/register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:47:05] "[31m[1mPOST /auth/register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:47:32] "[31m[1mPOST /auth/register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:48:10] "[31m[1mPOST /auth/register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\junitxml.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\user_agent.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:57:58] "[35m[1mPOST /auth/register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 10:59:03] "[31m[1mPOST /auth/register?user_id=jinxsally&password=123456 HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\setup.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\buyer.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\error.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\buyer.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\conf.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\jwt\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\conftest.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\access\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\access\\book.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\bench\\session.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\bench\\workload.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\data\\scraper.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_register.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\jwt\\api_jwt.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\jwt\\exceptions.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\access\\buyer.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\access\\new_buyer.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\access\\new_seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\access\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\bench\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\gen_book_data.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\blueprints.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_add_book.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_add_funds.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_add_stock_level.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_bench.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\globals.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_create_store.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_login.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_new_order.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_password.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_payment.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\wrappers.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\_internal.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\common.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\typing.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\synchronous\\collection.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\scaffold.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\bson\\codec_options.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\errors.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\results.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\synchronous\\client_session.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\synchronous\\database.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\typings.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\bson\\raw_bson.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\_csot.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\bson\\typings.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\_version.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\cursor.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\operations.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\read_preferences.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\write_concern.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\asynchronous\\mongo_client.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\synchronous\\command_cursor.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\read_concern.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\synchronous\\cursor.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\bson\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\config\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\fixtures.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\compat.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\database_shared.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\synchronous\\aggregation.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\sqlite3\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\cursor_shared.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\sqlite3\\dbapi2.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\cacheprovider.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\capture.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\doctest.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\legacypath.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\logging.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\monkeypatch.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\recwarn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\tmpdir.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\py.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\requests\\api.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 11:03:41] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 11:03:49] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 11:10:31] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 11:10:37] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 11:11:22] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 11:11:31] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 11:13:24] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\socketserver.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\threading.py', reloading
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 11:20:34] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 11:31:02] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\jwt\\api_jws.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\warnings.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\calendar.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\collections\\abc.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\datetime.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\typing.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 11:33:56] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\junitxml.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 12:17:15] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\access\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\requests\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\jwt\\api_jwt.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\socketserver.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\threading.py', reloading
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 12:21:22] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 12:21:48] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 12:22:15] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 12:23:56] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 12:24:54] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2024 12:26:06] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\jwt\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\jwt\\api_jwt.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\jwt\\exceptions.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:06:16] "[31m[1mPOST /seller/add_book?user_id=1&store_id=1&book_info=ahvdvgga&stock_level=3 HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:07:14] "[31m[1mPOST /seller/add_book?user_id=1&store_id=1&book_info=ahvdvgga&stock_level=3 HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\urllib\\parse.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\socketserver.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\threading.py', reloading
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:08:54] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:08:54] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:09:31] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:10:20] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:11:00] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:11:49] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:12:27] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:12:35] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:13:05] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:13:16] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:13:43] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:14:40] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 530 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:15:48] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 530 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:16:27] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 530 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:16:52] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 530 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:17:20] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 530 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:18:03] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 530 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:19:15] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 530 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [18/Oct/2024 23:19:34] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 530 -
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\json\\decoder.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\socketserver.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\threading.py', reloading
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 09:20:27] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 530 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\jwt\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\jwt\\api_jwt.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\jwt\\exceptions.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\cacheprovider.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\fixtures.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\config\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\blueprints.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\scaffold.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\globals.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\wrappers.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\typing.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\_internal.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\_csot.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\read_preferences.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\write_concern.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\read_concern.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\bson\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\database_shared.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\synchronous\\command_cursor.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 09:25:13] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 530 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 09:26:18] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 530 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 09:26:53] "POST /seller/add_book HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 09:27:48] "[31m[1mPOST /seller/add_book?user_id=1&store_id=1&book_info=ahvdvgga&stock_level=3 HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 09:34:40] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 530 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 09:35:38] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 530 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 09:37:02] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 09:38:02] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 09:38:32] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 10:02:12] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 10:02:38] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 10:02:46] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 10:03:41] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 10:04:22] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\socketserver.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\threading.py', reloading
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:15:04] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:17:46] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:18:07] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:18:26] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:18:45] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:21:22] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:22:11] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\_csot.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:23:26] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 530 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\typing.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:25:03] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:25:27] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:27:19] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:27:38] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:28:21] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:29:14] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\blueprints.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\scaffold.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\globals.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\wrappers.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\typing.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\_internal.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:29:31] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:29:43] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 11:30:11] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\cwp.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\socketserver.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\threading.py', reloading
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:24:20] "POST /seller/create_store HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:25:33] "POST /seller/add_book HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:26:00] "POST /seller/add_book HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:27:51] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\error.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\run.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\setup.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\conf.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\access\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\access\\book.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\access\\buyer.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\access\\new_buyer.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\access\\new_seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\access\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\bench\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\bench\\session.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\bench\\workload.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\data\\scraper.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\gen_book_data.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_add_book.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_add_funds.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_add_stock_level.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_bench.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_create_store.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\_csot.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_login.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_new_order.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_password.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_payment.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\common.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\fe\\test\\test_register.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\operations.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\synchronous\\collection.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\write_concern.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\bson\\codec_options.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\synchronous\\client_session.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\helpers_shared.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\synchronous\\database.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\typings.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\synchronous\\cursor.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\bson\\typings.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\collation.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\cursor_shared.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\urllib\\parse.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\typing.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:28:14] "POST /seller/create_store HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:28:45] "POST /seller/add_book HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:29:39] "POST /seller/add_book HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:31:45] "POST /seller/create_store HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:32:01] "POST /seller/add_book HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\cacheprovider.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\globals.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\wrappers.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\blueprints.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\scaffold.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\_internal.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\fixtures.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:40:18] "POST /seller/add_book HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:41:30] "POST /seller/add_book HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\json\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:45:06] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:45:12] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:45:33] "POST /seller/add_book HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:47:58] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:50:42] "POST /seller/add_book HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 12:51:42] "POST /seller/add_book HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\socketserver.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\threading.py', reloading
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 13:34:19] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 13:34:30] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\pymongo\\errors.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 13:34:57] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 530 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 13:35:38] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 528 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\db_conn.py', reloading
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 13:38:04] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 528 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 13:38:08] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 528 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\fixtures.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\config\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\capture.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\doctest.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\compat.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\junitxml.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\legacypath.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\logging.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\monkeypatch.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\recwarn.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\_pytest\\tmpdir.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 13:40:24] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 528 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 14:18:51] "POST /seller/add_book HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 14:21:08] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 14:21:20] "POST /seller/add_book HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 14:29:19] "POST /seller/add_stock_level HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\seller.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\model\\user.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\code\\КэѕЭ№ЬАн\\Lab1\\CDMS.Xuan_ZHOU.2024Fall.DaSE\\project1\\bookstore\\be\\view\\auth.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
