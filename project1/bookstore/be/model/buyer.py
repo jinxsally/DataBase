@@ -154,3 +154,77 @@ class Buyer(db_conn.DBConn):
         return 200, ""
     # 将sqlite风格语句变为MongoDB
 
+    # 查看历史订单 0:未付款;1:付款但是未发货;2:付款发货但是还没被接受;3:付款发货接受了;4:取消
+    def check_hist_order(self, user_id: str):
+        try:
+            if not self.user_id_exist(user_id):
+                return error.error_non_exist_user_id(user_id)
+
+            ans = []
+
+            # 查询未付款订单
+            query_unpaid = {"user_id": user_id, "status": 0}
+            result_unpaid = self.conn.order_col.find(query_unpaid)
+            for order in result_unpaid:
+                order_id = order.get("order_id")
+                details = self.get_order_details(order_id)
+                if details is None:
+                    return error.error_invalid_order_id(order_id)
+                ans.append({
+                    "status": "unpaid",
+                    "order_id": order_id,
+                    "buyer_id": order.get("user_id"),
+                    "store_id": order.get("store_id"),
+                    "total_price": order.get("price"),
+                    "details": details
+                })
+
+                # 查询已付款订单，根据不同的状态
+            status_mapping = {1: "unsent", 2: "sent but not received", 3: "received"}
+            query_paid = {"user_id": user_id, "status": {"$in": [1, 2, 3]}}
+            result_paid = self.conn.order_col.find(query_paid)
+            for order in result_paid:
+                order_id = order.get("order_id")
+                details = self.get_order_details(order_id)
+                if details is None:
+                    return error.error_invalid_order_id(order_id)
+                status = status_mapping.get(order.get("status"))
+                ans.append({
+                    "order_id": order_id,
+                    "buyer_id": order.get("user_id"),
+                    "store_id": order.get("store_id"),
+                    "total_price": order.get("price"),
+                    "status": status,
+                    "details": details
+                })
+
+                # 查询已取消订单
+            query_cancelled = {"user_id": user_id, "status": 4}
+            result_cancelled = self.conn.order_col.find(query_cancelled)
+            for order in result_cancelled:
+                order_id = order.get("order_id")
+                details = self.get_order_details(order_id)
+                if details is None:
+                    return error.error_invalid_order_id(order_id)
+                ans.append({
+                    "status": "cancelled",
+                    "order_id": order_id,
+                    "buyer_id": order.get("user_id"),
+                    "store_id": order.get("store_id"),
+                    "total_price": order.get("price"),
+                    "details": details
+                })
+
+        except errors.PyMongoError as e:
+            # debug
+            print(e)
+            return 528, "{}".format(str(e))
+        except BaseException as e:
+            # debug
+            print(e)
+            return 530, "{}".format(str(e))
+
+        if not ans:
+            return 200, "ok", "No orders found"
+        else:
+            return 200, "ok", ans
