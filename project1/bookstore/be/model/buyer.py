@@ -3,10 +3,10 @@ import uuid
 import json
 import logging
 from datetime import datetime
+from pymongo import errors
 
-import db_conn
-import error
-
+from project1.bookstore.be.model import db_conn
+from project1.bookstore.be.model import error
 
 class Buyer(db_conn.DBConn):
     def __init__(self):
@@ -58,9 +58,17 @@ class Buyer(db_conn.DBConn):
             })
             order_id = uid
 
+        # except BaseException as e:
+        #     logging.info("528, {}".format(str(e)))
+        #     return 528, "{}".format(str(e)), ""
+        except errors.PyMongoError as e:
+            # debug
+            print(e)
+            return 528, "{}".format(str(e))
         except BaseException as e:
-            logging.info("528, {}".format(str(e)))
-            return 528, "{}".format(str(e)), ""
+            # debug
+            print(e)
+            return 530, "{}".format(str(e))
         return 200, "ok", order_id
 
     def payment(self, user_id: str, password: str, order_id: str) -> (int, str):
@@ -110,8 +118,16 @@ class Buyer(db_conn.DBConn):
             result = self.conn.order_col.delete_one({"order_id": order_id, "status": 0})
             if result.deleted_count == 0:
                 return error.error_invalid_order_id(order_id)
-        except BaseException as e:
+        # except BaseException as e:
+        #     return 528, "{}".format(str(e))
+        except errors.PyMongoError as e:
+            # debug
+            print(e)
             return 528, "{}".format(str(e))
+        except BaseException as e:
+            # debug
+            print(e)
+            return 530, "{}".format(str(e))
         return 200, "ok"
 
     def add_funds(self, user_id, password, add_value) -> (int, str):
@@ -125,9 +141,16 @@ class Buyer(db_conn.DBConn):
             result = self.conn.user_col.update_one({"user_id": user_id}, {"$inc": {"balance": add_value}})
             if result.matched_count == 0:
                 return error.error_non_exist_user_id(user_id)
-        except BaseException as e:
+        # except BaseException as e:
+        #     return 528, "{}".format(str(e))
+        except errors.PyMongoError as e:
+            # debug
+            print(e)
             return 528, "{}".format(str(e))
-
+        except BaseException as e:
+            # debug
+            print(e)
+            return 530, "{}".format(str(e))
         return 200, ""
     # 将sqlite风格语句变为MongoDB
-    
+
