@@ -48,3 +48,26 @@ class Buyer:
         headers = {"token": self.token}
         r = requests.post(url, headers=headers, json=json)
         return r.status_code
+
+    def check_hist_order(self, user_id: str) -> int:
+        json = {"user_id": user_id}
+        url = urljoin(self.url_prefix, "check_hist_order")
+        headers = {"token": self.token}
+        r = requests.post(url, headers=headers, json=json)
+        return r.status_code
+
+    def cancel_order(self, user_id: str, order_id: str) -> int:
+        json = {"user_id": user_id, "order_id": order_id}
+        url = urljoin(self.url_prefix, "cancel_order")
+        headers = {"token": self.token}
+        r = requests.post(url, headers=headers, json=json)
+        return r.status_code
+
+    def auto_cancel_order(self, order_id: str) -> int:
+        json = {"order_id": order_id}
+        url = urljoin(self.url_prefix, "auto_cancel_order")
+        headers = {"token": self.token}
+        r = requests.post(url, headers=headers, json=json)
+        return r.status_code
+
+
