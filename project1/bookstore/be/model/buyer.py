@@ -4,6 +4,7 @@ import json
 import logging
 from datetime import datetime, timedelta
 from pymongo import errors
+from apscheduler.schedulers.background import BackgroundScheduler
 
 from project1.bookstore.be.model import db_conn
 from project1.bookstore.be.model import error
@@ -337,3 +338,7 @@ class Buyer(db_conn.DBConn):
             print(e)
             return 530, "{}".format(str(e))
         return 200, "ok"
+
+scheduler = BackgroundScheduler()
+scheduler.add_job(Buyer().auto_cancel_order, 'interval', id='5_second_job', seconds=5)
+scheduler.start()
