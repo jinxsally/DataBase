@@ -15,6 +15,7 @@ class Buyer:
         code, self.token = self.auth.login(self.user_id, self.password, self.terminal)
         assert code == 200
 
+    # 下单
     def new_order(self, store_id: str, book_id_and_count: [(str, int)]) -> (int, str):
         books = []
         for id_count_pair in book_id_and_count:
@@ -27,6 +28,7 @@ class Buyer:
         response_json = r.json()
         return r.status_code, response_json.get("order_id")
 
+    # 付款
     def payment(self, order_id: str):
         json = {
             "user_id": self.user_id,
@@ -38,6 +40,7 @@ class Buyer:
         r = requests.post(url, headers=headers, json=json)
         return r.status_code
 
+    # 充值
     def add_funds(self, add_value: str) -> int:
         json = {
             "user_id": self.user_id,
@@ -49,6 +52,7 @@ class Buyer:
         r = requests.post(url, headers=headers, json=json)
         return r.status_code
 
+    # 买家查看历史订单
     def check_hist_order(self, user_id: str) -> int:
         json = {"user_id": user_id}
         url = urljoin(self.url_prefix, "check_hist_order")
@@ -56,6 +60,7 @@ class Buyer:
         r = requests.post(url, headers=headers, json=json)
         return r.status_code
 
+    # 买家主动取消
     def cancel_order(self, user_id: str, order_id: str) -> int:
         json = {"user_id": user_id, "order_id": order_id}
         url = urljoin(self.url_prefix, "cancel_order")
@@ -63,11 +68,10 @@ class Buyer:
         r = requests.post(url, headers=headers, json=json)
         return r.status_code
 
+    # 自动取消订单（买家下单后，经过一段时间超时仍未付款）
     def auto_cancel_order(self, order_id: str) -> int:
         json = {"order_id": order_id}
         url = urljoin(self.url_prefix, "auto_cancel_order")
         headers = {"token": self.token}
         r = requests.post(url, headers=headers, json=json)
         return r.status_code
-
-
