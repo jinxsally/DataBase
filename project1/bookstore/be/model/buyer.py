@@ -6,8 +6,8 @@ from datetime import datetime, timedelta
 from pymongo import errors
 from apscheduler.schedulers.background import BackgroundScheduler
 
-from project1.bookstore.be.model import db_conn
-from project1.bookstore.be.model import error
+from be.model import db_conn
+from be.model import error
 
 class Buyer(db_conn.DBConn):
     def __init__(self):
