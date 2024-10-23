@@ -70,4 +70,12 @@ class Buyer:
         r = requests.post(url, headers=headers, json=json)
         return r.status_code
 
+    def is_order_cancelled(self, order_id: str) -> int:
+        json = {"order_id": order_id}
+        url = urljoin(self.url_prefix, "is_order_cancelled")
+        headers = {"token": self.token}
+        r = requests.post(url, headers=headers, json=json)
+        return r.status_code
+
+
 

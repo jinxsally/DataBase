@@ -339,6 +339,13 @@ class Buyer(db_conn.DBConn):
             return 530, "{}".format(str(e))
         return 200, "ok"
 
+    def is_order_cancelled(self, order_id: str) -> (int, str):
+        result = self.conn.order_col.find_one({"order_id": order_id, "status": 4})
+        if result is None:
+            return error.error_auto_cancel_fail(order_id)
+        else:
+            return 200, "ok"
+
 scheduler = BackgroundScheduler()
 scheduler.add_job(Buyer().auto_cancel_order, 'interval', id='5_second_job', seconds=5)
 scheduler.start()

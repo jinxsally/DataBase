@@ -65,3 +65,10 @@ def auto_cancel_order():
     code, message = b.auto_cancel_order(order_id)
     return jsonify({"message": message}), code
 
+@bp_buyer.route("/is_order_cancelled", methods=["POST"])
+def is_order_cancelled():
+    order_id = request.json.get("order_id")
+    b = Buyer()
+    code, message = b.is_order_cancelled(order_id)
+    return jsonify({"message": message}), code
+
