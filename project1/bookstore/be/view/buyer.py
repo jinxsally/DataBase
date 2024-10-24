@@ -6,6 +6,7 @@ from be.model.buyer import Buyer
 bp_buyer = Blueprint("buyer", __name__, url_prefix="/buyer")
 
 
+# 下单
 @bp_buyer.route("/new_order", methods=["POST"])
 def new_order():
     user_id: str = request.json.get("user_id")
@@ -22,6 +23,7 @@ def new_order():
     return jsonify({"message": message, "order_id": order_id}), code
 
 
+# 付款
 @bp_buyer.route("/payment", methods=["POST"])
 def payment():
     user_id: str = request.json.get("user_id")
@@ -32,6 +34,7 @@ def payment():
     return jsonify({"message": message}), code
 
 
+# 充值
 @bp_buyer.route("/add_funds", methods=["POST"])
 def add_funds():
     user_id = request.json.get("user_id")
@@ -39,4 +42,32 @@ def add_funds():
     add_value = request.json.get("add_value")
     b = Buyer()
     code, message = b.add_funds(user_id, password, add_value)
+    return jsonify({"message": message}), code
+
+
+# 查看历史订单
+@bp_buyer.route("/check_hist_order", methods=["POST"])
+def check_hist_order():
+    user_id = request.json.get("user_id")
+    b = Buyer()
+    code, message, res = b.check_hist_order(user_id)
+    return jsonify({"message": message, "history orders": res}), code
+
+
+# 用户主动取消订单
+@bp_buyer.route("/cancel_order", methods=["POST"])
+def cancel_order():
+    user_id = request.json.get("user_id")
+    order_id = request.json.get("order_id")
+    b = Buyer()
+    code, message = b.cancel_order(user_id, order_id)
+    return jsonify({"message": message}), code
+
+
+# 长时间未付款自动取消订单
+@bp_buyer.route("/auto_cancel_order", methods=["POST"])
+def auto_cancel_order():
+    order_id = request.json.get("order_id")
+    b = Buyer()
+    code, message = b.auto_cancel_order(order_id)
     return jsonify({"message": message}), code
