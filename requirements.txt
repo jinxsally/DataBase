@@ -1,9 +1,0 @@
-simplejson
-lxml
-codecov
-coverage
-flask==2.0.0
-pre - commit
-pytest
-PyJWT
-requests
