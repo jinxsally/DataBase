@@ -44,4 +44,5 @@ def be_run():
     app.register_blueprint(seller.bp_seller)
     app.register_blueprint(buyer.bp_buyer)
     init_completed_event.set()
-    app.run(debug=True)
+    # app.run(debug=True)
+    app.run()

@@ -18,28 +18,28 @@ class Store:
         try:
             db = self.get_db_conn()
             # 创建用户集合
-            # db.users.create_index([("user_id", pymongo.ASCENDING)], unique=True)
+            db.users.create_index([("user_id", pymongo.ASCENDING)], unique=True)
 
-            # # 创建用户商店集合
-            # db.user_store.create_index(
-            #     [("user_id", pymongo.ASCENDING), ("store_id", pymongo.ASCENDING)],
-            #     unique=True,
-            # )
+            # 创建用户商店集合
+            db.user_store.create_index(
+                [("user_id", pymongo.ASCENDING), ("store_id", pymongo.ASCENDING)],
+                unique=True,
+            )
 
-            # # 创建商店集合
-            # db.stores.create_index(
-            #     [("store_id", pymongo.ASCENDING), ("book_id", pymongo.ASCENDING)],
-            #     unique=True,
-            # )
+            # 创建商店集合
+            db.stores.create_index(
+                [("store_id", pymongo.ASCENDING), ("book_id", pymongo.ASCENDING)],
+                unique=True,
+            )
 
-            # # 创建新订单集合
-            # db.new_orders.create_index([("order_id", pymongo.ASCENDING)], unique=True)
+            # 创建新订单集合
+            db.new_orders.create_index([("order_id", pymongo.ASCENDING)], unique=True)
 
-            # # 创建新订单详情集合
-            # db.new_order_details.create_index(
-            #     [("order_id", pymongo.ASCENDING), ("book_id", pymongo.ASCENDING)],
-            #     unique=True,
-            # )
+            # 创建新订单详情集合
+            db.new_order_details.create_index(
+                [("order_id", pymongo.ASCENDING), ("book_id", pymongo.ASCENDING)],
+                unique=True,
+            )
 
             # 创建全文索引
             # db.books.createIndex(

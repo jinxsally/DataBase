@@ -4,7 +4,7 @@ from be.model import store
 class DBConn:
     def __init__(self):
         self.client = store.get_db_conn()
-        self.db = self.client["BookStore"]
+        self.db = self.client
 
     def user_id_exist(self, user_id):
         user_col = self.db["users"]

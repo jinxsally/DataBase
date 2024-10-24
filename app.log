@@ -487,3 +487,173 @@ INFO:werkzeug: * Detected change in 'D:\\anaconda\\Lib\\site-packages\\flask\\co
 INFO:werkzeug: * Restarting with watchdog (windowsapi)
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 101-574-056
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:33:26] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:33:26] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:33:26] "POST /auth/unregister HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:33:26] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:33:26] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:33:26] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:33:26] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:33:26] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\×ÀÃæ\llx\be\serve.py", line 23, in be_shutdown
+    shutdown_server()
+  File "D:\×ÀÃæ\llx\be\serve.py", line 17, in shutdown_server
+    raise RuntimeError("Not running with the Werkzeug Server")
+RuntimeError: Not running with the Werkzeug Server
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:33:26] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:40:25] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:40:25] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:40:25] "POST /auth/unregister HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:40:25] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:40:25] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:40:25] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:40:25] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:40:25] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\×ÀÃæ\llx\be\serve.py", line 23, in be_shutdown
+    shutdown_server()
+  File "D:\×ÀÃæ\llx\be\serve.py", line 17, in shutdown_server
+    raise RuntimeError("Not running with the Werkzeug Server")
+RuntimeError: Not running with the Werkzeug Server
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:40:25] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:44:24] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:44:24] "POST /auth/password HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:44:24] "[31m[1mPOST /auth/login HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:44:24] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:44:24] "POST /auth/logout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:44:25] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:44:25] "[31m[1mPOST /auth/password HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:44:25] "[31m[1mPOST /auth/login HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:44:25] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:44:25] "[31m[1mPOST /auth/password HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:44:25] "[31m[1mPOST /auth/login HTTP/1.1[0m" 401 -
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\×ÀÃæ\llx\be\serve.py", line 23, in be_shutdown
+    shutdown_server()
+  File "D:\×ÀÃæ\llx\be\serve.py", line 17, in shutdown_server
+    raise RuntimeError("Not running with the Werkzeug Server")
+RuntimeError: Not running with the Werkzeug Server
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:44:25] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:08] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:08] "POST /auth/password HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:08] "[31m[1mPOST /auth/login HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:08] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:08] "POST /auth/logout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:08] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:08] "[31m[1mPOST /auth/password HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:08] "[31m[1mPOST /auth/login HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:08] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:08] "[31m[1mPOST /auth/password HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:08] "[31m[1mPOST /auth/login HTTP/1.1[0m" 401 -
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\×ÀÃæ\llx\be\serve.py", line 23, in be_shutdown
+    shutdown_server()
+  File "D:\×ÀÃæ\llx\be\serve.py", line 17, in shutdown_server
+    raise RuntimeError("Not running with the Werkzeug Server")
+RuntimeError: Not running with the Werkzeug Server
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:08] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:41] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:41] "POST /auth/password HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:41] "[31m[1mPOST /auth/login HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:41] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:41] "POST /auth/logout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:41] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:41] "[31m[1mPOST /auth/password HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:41] "[31m[1mPOST /auth/login HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:41] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:41] "[31m[1mPOST /auth/password HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:41] "[31m[1mPOST /auth/login HTTP/1.1[0m" 401 -
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\×ÀÃæ\llx\be\serve.py", line 23, in be_shutdown
+    shutdown_server()
+  File "D:\×ÀÃæ\llx\be\serve.py", line 17, in shutdown_server
+    raise RuntimeError("Not running with the Werkzeug Server")
+RuntimeError: Not running with the Werkzeug Server
+INFO:werkzeug:127.0.0.1 - - [24/Oct/2024 13:46:41] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -

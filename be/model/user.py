@@ -6,14 +6,13 @@ from be.model import db_conn
 import pymongo
 import pymongo.errors
 
+
 # encode a json string like:
 #   {
 #       "user_id": [user name],
 #       "terminal": [terminal code],
 #       "timestamp": [ts]} to a JWT
 #   }
-
-
 def jwt_encode(user_id: str, terminal: str) -> str:
     encoded = jwt.encode(
         {"user_id": user_id, "terminal": terminal, "timestamp": time.time()},
@@ -85,9 +84,7 @@ class User(db_conn.DBConn):
 
     # 检查密码
     def check_password(self, user_id: str, password: str) -> (int, str):
-        doc = self.db["users"].find_one(
-            {"user_id": user_id}, {"password": 1, "_id": 0}
-        )
+        doc = self.db["users"].find_one({"user_id": user_id}, {"password": 1, "_id": 0})
         if doc is None:
             return error.error_authorization_fail()
 

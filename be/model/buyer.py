@@ -62,12 +62,12 @@ class Buyer(db_conn.DBConn):
             for book_id, count in id_and_count:
                 print(1)
                 result = self.db.stores.find_one(
-                    # {"store_id": store_id, "books.book_id": book_id}
+                    {"store_id": store_id, "books.book_id": book_id}
                 )
                 print(result)
                 print(result["books"][0]["stock_level"])
-                # if not result:
-                #     return error.error_non_exist_book_id(book_id) + (order_id,)
+                if not result:
+                    return error.error_non_exist_book_id(book_id) + (order_id,)
                 print(2)
                 result1 = self.db.books.find_one({"id": book_id})
                 print(3)
@@ -76,8 +76,8 @@ class Buyer(db_conn.DBConn):
                 print(4)
                 # 获取价格
                 price = result1["price"]
-                # if stock_level < count:
-                #     return error.error_stock_level_low(book_id) + (order_id,)
+                if stock_level < count:
+                    return error.error_stock_level_low(book_id) + (order_id,)
 
                 print(5)
                 # 修改商店书籍库存
@@ -90,8 +90,8 @@ class Buyer(db_conn.DBConn):
                     {"$inc": {"books.$.stock_level": -count}},
                 )
 
-                # if result.modified_count == 0:
-                #     return error.error_stock_level_low(book_id) + (order_id,)
+                if result.modified_count == 0:
+                    return error.error_stock_level_low(book_id) + (order_id,)
 
                 print(6)
                 # 添加当前书籍的订单
