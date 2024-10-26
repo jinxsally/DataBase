@@ -22,8 +22,8 @@ class Book:
     author_intro: str
     book_intro: str
     content: str
-    tags: [str]
-    pictures: [bytes]
+    tags: list[str]
+    pictures: list[bytes]
 
     def __init__(self):
         self.tags = []
@@ -44,7 +44,7 @@ class BookDB:
         count = book_col.count_documents({})
         return count
 
-    def get_book_info(self, start, size) -> [Book]:
+    def get_book_info(self, start, size) -> list[Book]:
         books = []
         book_col = self.db["books"]
         content = book_col.find().skip(start).limit(size)

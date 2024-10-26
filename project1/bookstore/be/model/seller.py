@@ -2,7 +2,7 @@ from pymongo import errors
 from be.model import error
 from be.model import db_conn
 import json
-
+import logging
 
 class Seller(db_conn.DBConn):
     def __init__(self):
@@ -111,7 +111,7 @@ class Seller(db_conn.DBConn):
             print(e)
             return 530, "{}".format(str(e))
         return 200, "ok"
-
+    
     # 发货
     def ship_order(self, user_id: str, store_id: str, order_id: str) -> (int, str):
         try:
@@ -122,12 +122,16 @@ class Seller(db_conn.DBConn):
             if not self.order_id_exist(order_id):
                 return error.error_invalid_order_id(order_id)
             order = self.db["new_orders"].find_one({"order_id": order_id})
-            order_state = order["state"]
+            if not order:
+                return 528, "Order not found"
+            order_state = order["status"]
             if order_state == 1:
                 query = {"order_id": order_id}
-                update_operation = {"$set": {"state": 2}}  # 发货但未收货
+                update_operation = {"$set": {"status": 2}}  # 发货但未收货
                 result = self.db["new_orders"].update_one(query, update_operation)
+
                 if result.modified_count <= 0:
+                    print(result.modified_count)
                     return 528, "order ship update failed"
                 else:
                     return 200, "ok"

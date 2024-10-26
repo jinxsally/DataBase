@@ -7,6 +7,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 
 from be.model import db_conn
 from be.model import error
+from pymongo.errors import PyMongoError
 
 
 class Buyer(db_conn.DBConn):
@@ -463,7 +464,60 @@ class Buyer(db_conn.DBConn):
             return error.error_auto_cancel_fail(order_id)
         else:
             return 200, "ok"
+    def archive_order(self, order_id, state) -> None:
+        try:
+            assert state in ["Cancelled", "Received"]
+            order_collection = self.db["new_order"]
+            order_archive_collection = self.db["archive_order"]
+            
+            order_info = order_collection.find_one({"order_id": order_id})
+            if order_info is None:
+                raise PyMongoError(f"No order found with order_id: {order_id}")
+            
+            archived_order = order_info.copy()
+            archived_order["state"] = state
+            
+            order_archive_collection.insert_one(archived_order)
+            
+            order_collection.delete_one({"order_id": order_id})
 
+        except PyMongoError as e:
+            logging.info("528, {}".format(str(e)))
+            return
+        except BaseException as e:
+            logging.info("530, {}".format(str(e)))
+            return
+        return
+    #确认收货
+    def confirm_order(self, user_id: str, password: str, order_id: str) -> (int, str):
+        try:          
+            order_collection = self.db["new_orders"]
+            user_collection = self.db["users"]
+            
+            order = order_collection.find_one({"order_id": order_id})
+            if order is None:
+                return error.error_invalid_order_id(order_id)
+            
+            if order["user_id"] != user_id:
+                return error.error_authorization_fail()
+            
+            if order["status"] != 2:
+                return error.error_wrong_state(order_id)
+            
+            user = user_collection.find_one({"user_id": user_id})
+            if user is None or user["password"] != password:
+                return error.error_authorization_fail()
+            
+            self.archive_order(order_id, "Received")
+
+        except PyMongoError as e:
+            logging.info("528, {}".format(str(e)))
+            return 528, "{}".format(str(e))
+        except BaseException as e:
+            logging.info("530, {}".format(str(e)))
+            return 530, "{}".format(str(e))
+        return 200, "ok"
+    
 
 # 后台调度器，自动取消订单
 scheduler = BackgroundScheduler()
