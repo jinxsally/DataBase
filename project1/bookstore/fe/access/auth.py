@@ -40,3 +40,25 @@ class Auth:
         url = urljoin(self.url_prefix, "unregister")
         r = requests.post(url, json=json)
         return r.status_code
+
+    # 搜索
+    def search(
+        self,
+        user_id: str,
+        store_id: str,
+        sort: int,
+        key: str,
+        page: int,
+        page_size: int,
+    ) -> int:
+        json = {
+            "user_id": user_id,
+            "store_id": store_id,
+            "sort": sort,
+            "key": key,
+            "page": page,
+            "page_size": page_size,
+        }
+        url = urljoin(self.url_prefix, "search")
+        r = requests.post(url, json=json)
+        return r.status_code

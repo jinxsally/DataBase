@@ -2,6 +2,7 @@ from flask import Blueprint
 from flask import request
 from flask import jsonify
 from be.model import user
+from bson import json_util
 
 bp_auth = Blueprint("auth", __name__, url_prefix="/auth")
 
@@ -55,3 +56,24 @@ def change_password():
         user_id=user_id, old_password=old_password, new_password=new_password
     )
     return jsonify({"message": message}), code
+
+
+# 搜索
+@bp_auth.route("/search", methods=["POST"])
+def search():
+    user_id = request.json.get("user_id", "")
+    store_id = request.json.get("store_id", "")
+    sort = request.json.get("sort", 0)
+    key = request.json.get("key", "")
+    page = request.json.get("page", 0)
+    page_size = request.json.get("page_size", 0)
+    u = user.User()
+    code, message, results = u.search(
+        user_id=user_id,
+        store_id=store_id,
+        sort=sort,
+        key=key,
+        page=page,
+        page_size=page_size,
+    )
+    return json_util.dumps({"message": message, "results": results}), code

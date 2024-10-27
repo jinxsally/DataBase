@@ -185,31 +185,81 @@ class User(db_conn.DBConn):
         return 200, "ok"
 
     # 搜索
-    def search(self, user_id: str, store_id: str, key: str, page: int, page_size: int):
+    def search(
+        self,
+        user_id: str,
+        store_id: str,
+        sort: int,
+        key: str,
+        page: int,
+        page_size: int,
+    ):
         try:
             if not self.user_id_exist(user_id):
                 # debug
-                return error.error_non_exist_user_id(user_id)
-            if not self.store_id_exist(store_id):
-                # debug
-                return error.error_non_exist_store_id(store_id)
+                return error.error_non_exist_user_id(user_id) + ("",)
+            # 对剩余的情况进行意外处理
+            if not key:
+                key = ""  # 搜索所有内容
+            if not page:
+                page = 1  # 搜索第一页
+            if not page_size:
+                page_size = 10
 
-            # 执行查询操作，两种情况
-
+            # 执行查询操作，2*4种情况
+            # 关于搜索的内容sort： 1.书名 2.标签 3.目录 4.内容
+            print(sort, key, page, page_size, "\n")
             # 店铺搜索
             if store_id:
                 query = {
                     "store_id": store_id,
                     "books.stock_level": {"$gt": 0},  # 库存量大于等于0
-                    "books": {
-                        "$elemMatch": {
-                            "book_info": {
-                                "$regex": key,  # 存在关键词的都需要
-                                "$options": "i",  # 不区分大小写
-                            }
-                        }
-                    },
                 }
+
+                # 根据搜索范围区分
+                if sort == 1:  # 书名
+                    query["books.book_info.title"] = {
+                        "$regex": key,
+                        "$options": "i",  # 不区分大小写
+                    }
+                elif sort == 2:  # 标签
+                    query["books.book_info.tags"] = {
+                        "$regex": key,
+                        "$options": "i",  # 不区分大小写
+                    }
+                elif sort == 3:  # 书籍介绍
+                    query["books.book_info.book_intro"] = {
+                        "$regex": key,
+                        "$options": "i",  # 不区分大小写
+                    }
+                elif sort == 4:  # 内容
+                    query["books.book_info.content"] = {
+                        "$regex": key,
+                        "$options": "i",  # 不区分大小写
+                    }
+                else:  # 全部
+                    query["books"] = {
+                        "store_id": store_id,
+                        "books.stock_level": {"$gt": 0},  # 库存量大于等于0
+                        "$or": [
+                            {"books.book_info.title": {"$regex": key, "$options": "i"}},
+                            {"books.book_info.tags": {"$regex": key, "$options": "i"}},
+                            {
+                                "books.book_info.book_intro": {
+                                    "$regex": key,
+                                    "$options": "i",
+                                }
+                            },
+                            {
+                                "books.book_info.content": {
+                                    "$regex": key,
+                                    "$options": "i",
+                                }
+                            },
+                        ],
+                    }
+                print(query, "\n")
+                # 搜索
                 books = (
                     self.db.stores.find(query)
                     .skip((page - 1) * page_size)  # 跳过已经浏览过的界面
@@ -220,15 +270,51 @@ class User(db_conn.DBConn):
             else:
                 query = {
                     "books.stock_level": {"$gt": 0},  # 库存量大于等于0
-                    "books": {
-                        "$elemMatch": {
-                            "book_info": {
-                                "$regex": key,
-                                "$options": "i",
-                            }
-                        }
-                    },
                 }
+
+                # 根据搜索范围区分
+                if sort == 1:  # 书名
+                    query["books.book_info.title"] = {
+                        "$regex": key,
+                        "$options": "i",  # 不区分大小写
+                    }
+                elif sort == 2:  # 标签
+                    query["books.book_info.tags"] = {
+                        "$regex": key,
+                        "$options": "i",  # 不区分大小写
+                    }
+                elif sort == 3:  # 书籍介绍
+                    query["books.book_info.book_intro"] = {
+                        "$regex": key,
+                        "$options": "i",  # 不区分大小写
+                    }
+                elif sort == 4:  # 内容
+                    query["books.book_info.content"] = {
+                        "$regex": key,
+                        "$options": "i",  # 不区分大小写
+                    }
+                else:  # 全部
+                    query = {
+                        "books.stock_level": {"$gt": 0},  # 库存量大于等于0
+                        "$or": [
+                            {"books.book_info.title": {"$regex": key, "$options": "i"}},
+                            {"books.book_info.tags": {"$regex": key, "$options": "i"}},
+                            {
+                                "books.book_info.book_intro": {
+                                    "$regex": key,
+                                    "$options": "i",
+                                }
+                            },
+                            {
+                                "books.book_info.content": {
+                                    "$regex": key,
+                                    "$options": "i",
+                                }
+                            },
+                        ],
+                    }
+                print(query, "\n")
+                # 搜索
                 books = (
                     self.db.stores.find(query)
                     .skip((page - 1) * page_size)  # 跳过已经浏览过的界面
@@ -237,12 +323,15 @@ class User(db_conn.DBConn):
 
             # 筛选执行结果的信息
             ans = []
+            books = list(books)
+            # print(books, "\n")
+            if not books:
+                return error.error_key_no_exist() + ("",)
 
             for book in books:
                 ans.append(book)
-
         except pymongo.errors.PyMongoError as e:
-            return 528, "{}".format(str(e))
+            return 528, "{}".format(str(e)) + ("",)
         except BaseException as e:
-            return 530, "{}".format(str(e))
+            return 530, "{}".format(str(e)) + ("",)
         return 200, "ok", ans

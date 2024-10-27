@@ -10,7 +10,7 @@ error_code = {
     518: "invalid order id {}",
     519: "not sufficient funds, order id {}",
     520: "auto cancel failed, order id {}",
-    521: "",
+    521: "no related books",
     522: "",
     523: "",
     524: "",
@@ -69,5 +69,5 @@ def error_auto_cancel_fail(order_id):
     return 520, error_code[520].format(order_id)
 
 
-def error_order_id_NULL():
+def error_key_no_exist():
     return 521, error_code[521]

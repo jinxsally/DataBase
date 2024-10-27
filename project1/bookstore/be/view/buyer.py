@@ -71,7 +71,9 @@ def auto_cancel_order():
     b = Buyer()
     code, message = b.auto_cancel_order(order_id)
     return jsonify({"message": message}), code
-#收货
+
+
+# 收货
 @bp_buyer.route("/confirm_order", methods=["POST"])
 def confirm_order():
     user_id = request.json.get("user_id")
