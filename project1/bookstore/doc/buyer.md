@@ -142,3 +142,48 @@ Status Code:
 200 | 充值成功
 401 | 授权失败
 5XX | 无效参数
+
+## 买家确认收货
+
+#### URL：
+POST http://[address]/buyer/confirm_order
+
+#### Request
+
+##### Header:
+
+key | 类型 | 描述 | 是否可为空
+---|---|---|---
+token | string | 登录产生的会话标识 | N
+
+##### Body:
+```json
+{
+  "user_id": "user_id",
+  "password": "password",
+  "order_id": "order_id"
+}
+```
+
+##### 属性说明：
+
+变量名 | 类型     | 描述     | 是否可为空
+---|--------|--------|---
+user_id | string | 买家用户ID | N
+password | string | 用户密码   | N
+order_id | string | 订单ID   | N
+
+
+#### Response
+
+Status Code:
+
+码 | 描述
+--- | ---
+200 | 确认收货成功
+528 | 买家用户ID不存在
+528 | 授权失败：密码不正确
+530 | 订单ID不存在
+530 | 该订单状态不正确
+530 | 服务器内部错误
+

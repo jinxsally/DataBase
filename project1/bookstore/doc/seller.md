@@ -176,3 +176,45 @@ Status Code:
 200 | 创建商铺成功
 5XX | 商铺ID不存在 
 5XX | 图书ID不存在 
+
+
+## 发货
+
+
+
+#### URL
+
+POST http://[address]/seller/ship_order
+
+#### Request
+
+Body:
+
+```json
+{
+  "user_id": "user_id",
+  "store_id": "store_id",
+  "order_id": "order_id"
+}
+```
+
+key | 类型 | 描述     | 是否可为空
+---|---|--------|---
+user_id | string | 卖家用户ID | N
+store_id | string | 商铺ID   | N
+order_id | string | 订单ID   | N
+
+#### Response
+
+Status Code:
+
+码 | 描述
+--- | ---
+200 | 发货成功
+528 | 卖家用户ID不存在
+528 | 商铺ID不存在
+528 | 订单ID不存在
+528 | 订单未找到
+528 | 订单发货更新失败
+528 | 订单状态错误
+530 | 服务器内部错误
